@@ -1,0 +1,12 @@
+[
+    {
+        "name": "One Year Loan",
+        "interest_rate": 6,
+        "term": 12
+    },
+    {
+        "name": "Two Year Loan",
+        "interest_rate": 5,
+        "term": 24
+    }
+]

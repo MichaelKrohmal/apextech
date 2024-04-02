@@ -13,8 +13,8 @@ return new class extends Migration
             $table->id();
             $table->string('type')->default(DiscountRuleType::BulkPurchase->value);
             $table->foreignId('product_id')->unique();
-            $table->integer('min_quantity')->default(2);
-            $table->decimal('discounted_price', 8, 2, true)->default(0);
+            $table->unsignedInteger('min_quantity')->default(2);
+            $table->unsignedDecimal('discounted_price', 8, 2)->default(0);
             $table->timestamps();
 
             $table->foreign('product_id')

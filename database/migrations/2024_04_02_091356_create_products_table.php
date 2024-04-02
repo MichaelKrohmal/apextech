@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->string('name');
-            $table->decimal('price', 8, 2, true);
+            $table->unsignedDecimal('price', 8, 2);
             $table->timestamps();
         });
     }

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "First Broker",
+        "email": "first_broker@gmail.com",
+        "company_address": "Abbey Road 1",
+        "type": ["A"]
+    },
+    {
+        "name": "Second Broker",
+        "email": "second_broker@gmail.com",
+        "company_address": "Abbey Road 2",
+        "type": ["A", "B"]
+    },
+    {
+        "name": "Third Broker",
+        "email": "third_broker@gmail.com",
+        "company_address": "Abbey Road 3",
+        "type": ["A", "C"]
+    },
+    {
+        "name": "Fourth Broker",
+        "email": "fourth_broker@gmail.com",
+        "company_address": "Abbey Road 4",
+        "type": ["D"]
+    },
+    {
+        "name": "Fifth Broker",
+        "email": "fifth_broker@gmail.com",
+        "company_address": "Abbey Road 5",
+        "type": ["D", "C"]
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "customer_id": "1",
+        "address": "Anfield Road 1"
+    },
+    {
+        "customer_id": "2",
+        "address": "Anfield Road 2"
+    },
+    {
+        "customer_id": "3",
+        "address": "Anfield Road 3"
+    },
+    {
+        "customer_id": "1",
+        "address": "Anfield Road 11"
+    },
+    {
+        "customer_id": "1",
+        "address": "Anfield Road 111"
+    },
+    {
+        "customer_id": "2",
+        "address": "Anfield Road 22"
+    }
+]

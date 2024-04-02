@@ -1,0 +1,44 @@
+[
+    {
+        "customer_id": 1,
+        "broker_id": 1,
+        "credit_product_id": 1,
+        "loan_amount": 1200
+    },
+    {
+        "customer_id": 2,
+        "broker_id": 2,
+        "credit_product_id": 2,
+        "loan_amount": 2400
+    },
+    {
+        "customer_id": 3,
+        "broker_id": 2,
+        "credit_product_id": 1,
+        "loan_amount": 3600
+    },
+    {
+        "customer_id": 3,
+        "broker_id": 5,
+        "credit_product_id": 2,
+        "loan_amount": 4800
+    },
+    {
+        "customer_id": 1,
+        "broker_id": 5,
+        "credit_product_id": 1,
+        "loan_amount": 6000
+    },
+    {
+        "customer_id": 5,
+        "broker_id": 4,
+        "credit_product_id": 1,
+        "loan_amount": 6000
+    },
+    {
+        "customer_id": 5,
+        "broker_id": null,
+        "credit_product_id": 2,
+        "loan_amount": 60000
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "First Nunez",
+        "date_of_birth": "2021-01-01",
+        "email": "first@gmail.com"
+    },
+    {
+        "name": "Second Zinchenko",
+        "date_of_birth": "2022-02-02",
+        "email": "second@gmail.com"
+    },
+    {
+        "name": "Third Holland",
+        "date_of_birth": "2023-03-03",
+        "email": "third@gmail.com"
+    },
+    {
+        "name": "Fourth Martinez",
+        "date_of_birth": "2024-04-04",
+        "email": "fourth@gmail.com"
+    },
+    {
+        "name": "Fifth Son",
+        "date_of_birth": "2025-05-05",
+        "email": "fifth@gmail.com"
+    }
+]
