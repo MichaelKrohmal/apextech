@@ -1,0 +1,14 @@
+[
+    {
+        "type": "b1g1f",
+        "product_code": "FR1",
+        "min_quantity": 2,
+        "discounted_price": 0
+    },
+    {
+        "type": "bp",
+        "product_code": "SR1",
+        "min_quantity": 3,
+        "discounted_price": 4.50
+    }
+]
