@@ -19,12 +19,11 @@
 <h2>Customize Test Cases</h2>
 <p>Can be done in <b>tests/Feature/CheckoutTest.php</b></p>
 
-<h2>TODOs and Notes</h2>
+<h2>Notes</h2>
 <ol>
   <li>"buy-one-get-one-free" - there's no sense to buy odd number of Products, only even</li>
-  <li>Extend for cases with 2+ DiscountRules per Product (if needed)</li>
-  <li>Optional: Can add admin panel for creating new Products and DiscountRules</li>
-  <li>Task #2: It's better to use EnumClass statuses to provide easier extending, see TODOs im Migrations</li>
+  <li>There can be only 1 DiscountRule per Product since clashes are not specified</li>
+  <li>Checkout process assumes we can change applied DiscountRules if needed</li>
 </ol>
 
 <h1>Apextech Test #2</h1>
@@ -34,7 +33,12 @@
 <p>Schema in <b>MySQLTaskData/schema.sql</b></p>
 <p>Seed in <b>MySQLTaskData/seed.sql</b></p>
 
-<h1>Task #1 Description - PHP</h1>
+<h2>Notes</h2>
+<ol>  
+  <li>It's better to use EnumClass statuses to provide easier extending, see TODOs im Migrations</li>
+</ol>
+
+<h1>Task #1 Original Description - PHP</h1>
 Notes: Please use about an hour for this test. You can use a framework or structured files as you see fit.
 To return the test, either send a zipped archive of code or a *private* repo link.
 
@@ -74,7 +78,7 @@ Total price expected: £3.11
 Basket: SR1,SR1,FR1,SR1
 Total price expected: £16.61
 
-<h1>Task #2 Description - MySQL</h1>
+<h1>Task #2 Original Description - MySQL</h1>
 We are designing a new system which will accept loan applications by customers or by brokers working on behalf of
 customers. A broker is just an agent working on behalf of the customer, trying to find the best possible loan for them.
 

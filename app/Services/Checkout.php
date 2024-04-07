@@ -2,7 +2,6 @@
 
 namespace App\Services;
 
-use App\Enums\DiscountRuleType;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -36,22 +35,9 @@ class Checkout
         foreach ($this->products as $code => $quantity) {
             foreach ($this->discountRules as $discountRule) {
                 if ($discountRule->product->code == $code) {
-                    if ($discountRule->type == DiscountRuleType::BulkPurchase
-                        and $discountRule->min_quantity <= $quantity
-                    ) {
-                        $this->total += $discountRule->discounted_price * $quantity;
-                    } else if (
-                        $discountRule->type == DiscountRuleType::BueOneGetOneFree
-                        and 2 <= $quantity
-                    ) {
-                        $this->total += ($discountRule->product->price * intdiv($quantity, 2)) +
-                                $discountRule->product->price * ($quantity % 2);
-                    } else {
-                        $this->total += $quantity * $discountRule->product->price;
-                    }
+                    $this->total += $discountRule->calculateSubtotal($quantity);
                 }
             }
-
             if ($product = Product::whereCode($code)->first()
                 and !$product->discount_rule
             ) {

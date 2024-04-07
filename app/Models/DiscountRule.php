@@ -30,4 +30,13 @@ class DiscountRule extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function calculateSubtotal(int $quantity): float
+    {
+        return match ($this->type) {
+            DiscountRuleType::BueOneGetOneFree => $this->product->price * (intdiv($quantity, 2) + ($quantity % 2)),
+            DiscountRuleType::BulkPurchase => ($this->min_quantity <= $quantity) ? $this->discounted_price * $quantity : $this->product->price * $quantity,
+            default => $this->product->price * $quantity,
+        };
+    }
 }
